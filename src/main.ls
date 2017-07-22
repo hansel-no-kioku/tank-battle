@@ -24,7 +24,7 @@ scenes =
     label: \result
     next-label: \title
     arguments:
-      message: "#{meta.title}\nVersion #{meta.version}\nscore: {score}\n"
+      message: "#{meta.title}\nVersion #{meta.version}\n"
       timeout: 15
 
 phina.main ->
