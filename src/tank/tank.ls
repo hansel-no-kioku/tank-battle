@@ -18,7 +18,7 @@ export class Tank extends ShadowedRectangle
     super @_
 
     @motion = Motion(@_).attach-to @
-    {@side} = @_
+    @{side, score} = @_
     @_hp = @_.hp
     [@_gun-wait, @_missile-wait] = [@_.gun-wait, @_.missile-wait]
 

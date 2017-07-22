@@ -54,7 +54,7 @@ export class BattleField extends display.RectangleShape
       if e.tank.side is \me
         @parent.flare \defeated
       else
-        @parent.flare \score
+        @parent.flare \score kill-score: e.tank.score ? 0
         @parent.flare \win if (@_enemy-num -= 1) <= 0
 
   add-tank: (tank) ->

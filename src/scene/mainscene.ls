@@ -63,8 +63,8 @@ export class MainScene extends display.DisplayScene
 
     @on \blur ->  @app?.push-scene game.PauseScene!
 
-    @on \score ->
-      score += 1
+    @on \score ({kill-score})->
+      score += kill-score
       @_scoreLabel.text = score-text score
 
     @on \defeated ->
