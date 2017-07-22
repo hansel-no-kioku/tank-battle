@@ -1,6 +1,6 @@
 bower_components
 node_modules
 src/common/*.json
-develop
-release
+/develop
+/release
 yarn*
