@@ -1,0 +1,12 @@
+{
+	"name": "TANK BATTLE",
+	"icons": [
+		{
+			"src": "icons\/android-chrome-96x96.png?v=3ealJ8QzNq",
+			"sizes": "96x96",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#7cd1b8",
+	"display": "standalone"
+}
