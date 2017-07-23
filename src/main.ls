@@ -25,7 +25,7 @@ scenes =
     next-label: \title
     arguments:
       message: "#{meta.title}\nVersion #{meta.version}\n"
-      timeout: 15
+      timeout: 30
 
 phina.main ->
   debug = window.location.hash is \#debug

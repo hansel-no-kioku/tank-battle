@@ -86,6 +86,8 @@ export class Tank extends ShadowedRectangle
 
   is-heated: -> true
 
+  damage: -> @_.hp - @_hp
+
   _clear-target: ->
     @_target = null
     if @_marker?

@@ -1,7 +1,7 @@
 # firegauge.ls
 
 require! {
-  phina: {display, ui, util}
+  phina: {display, ui}
 }
 
 export class FireGauge extends ui.Gauge
@@ -72,7 +72,7 @@ export class FireGauge extends ui.Gauge
       tweener
         .clear!
         .set scale-x: 1.0 scale-y: 1.0 alpha: 0.7
-        .to scale-x: 1.5 scale-y: 1.5, alpha: 0.2, 500 util.Tween.ease-in-cubic
+        .to scale-x: 1.5 scale-y: 1.5, alpha: 0.2, 500 \easeICubic
         .set-loop true
         .play!
     flash-stop: (tweener) ->
