@@ -113,7 +113,7 @@ export class MainScene extends display.DisplayScene
 
   _stage-score: ({name, score, params}, y, delay, period) ->
     label = display.Label do
-      {text: stage-score-text name, score
+      {text: "#{name}: #{if score > 0 then \+ else ''}#{score}"
       font-size: 32, fill: \white shadow: \black shadow-blur: 8} <<<< params
     width = label.calcCanvasWidth!
     label
@@ -125,10 +125,8 @@ export class MainScene extends display.DisplayScene
         .call ~> @_add-score score
         .play!
 
-score-text = -> "Score #{it}"
-stage-score-text = (name, score) ->
-  sign = if score > 0 then \+ else if score < 0 then \- else ''
-  "#{name} #{sign}#{score}"
+score-text = -> "Score: #{it}"
+
 digit2 = -> (it + '').pad-start 2 \0
 
 time-text = ->
@@ -139,7 +137,7 @@ time-text = ->
 win-score = (stage) -> name: \Win score: stage * 10 params: {}
 
 time-bonus = (stage, stage-time) ->
-  score = Math.max 0, Math.ceil stage-time * 2
+  score = Math.max 0, Math.floor stage-time * 2
   name: "Remaining Time" score, params: {}
 
 repair-cost = (damage) ->
