@@ -19,7 +19,7 @@ export class MainScene extends display.DisplayScene
 
     @_score = score ? 0
     stage ?= 1
-    stage-time = 10.1 + stage * 10
+    stage-time = 10.9 + stage * 10
 
     @_field = BattleField ({width, height} = @)
       .set-position @gridX.center!, @gridY.center!
