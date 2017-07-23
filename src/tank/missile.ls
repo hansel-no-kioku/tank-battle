@@ -75,5 +75,5 @@ export class Missile extends ShadowedRectangle
   _default:
     width: 12, height: 4, stroke: false
     smoke-rate: 0.5, resolution: 5, side: \enemy
-    speed: 2, accel: 0.2, speed-max: 8, yaw-max: 0.6
+    speed: 2, accel: 0.2, speed-max: 8, yaw-max: 0.7
     seek-start: 30, seek-angle: 45, damage: 50
